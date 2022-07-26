@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
+@media screen and (max-width: 800px) {
+    #imagen{
+      width: 80%;
+      float: center;
+    }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.1px);
+  margin: 0 1.5rem;
+}
+
+h1, .precio{
+  font-family: "Fraunces", sans-serif;
+}
+
+h1{
+  color: hsl(228, 12%, 48%);
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 1rem;
+}
+
+p{
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+
+
+
+.contenido article:first-child img{
+  border-radius: 1rem 1rem 0 0;
+}
+
+.contenido article:last-child{
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0 0 0 1rem 1rem;
+  margin-top: -1rem;
+}
+
+.precio{
+  color: hsl(158, 36%, 37%);
+}
+
+button, li{
+  font-family: inherit;
+
+}
+
+.contenido{
+  max-width: 500px;
+}
+
+.contenido h1{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contenido p{
+  margin-bottom: 2rem;
+}
+
+.contenido ul{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contenido ul li:first-child{
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.contenido ul li:nth-child(2){
+  color: hsl(228, 12%, 48%);
+}
+
+.contenido .btn{
+  background-color: hsl(158, 36%, 37%) /*si le pongo un important el hover no va a funcionar*/;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido .btn:hover{
+  background-color: hsl(158, 36%, 20%);
+}
+
+.contenido .btn img{
+  margin-right: 0.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media(min-width:640px){
+  .contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0.625rem;
+  }
+
+  .contenido article:first-child img{
+    border-radius: 0.625rem  0 0 0.625rem;
+    height: 100%;
+  }
+
+  .contenido article:last-child {
+    border-radius:0 0.625rem 0.625rem 0;
+    margin-top: 0;
+    padding: 1.5rem 1.5rem 1.5rem;
+  }
+
+  .contenido p{
+    margin-bottom: 1rem;
+  }
+  
+  .contenido p{
+    margin-bottom: 1rem;
+  }
+
+  picture img{
+    height: 100%;
+  }
+
+}
